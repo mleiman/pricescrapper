@@ -1,16 +1,7 @@
-#Gradle
 .gradle
-
-# Compiled class file
+.settings
+bin
+build
 *.class
-
-# Log file
 *.log
 
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar

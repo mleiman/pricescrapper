@@ -1,4 +1,27 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'com.mleiman.pricescrapper.PriceScrapperMain'
+
 task wrapper(type: Wrapper) {
     gradleVersion = '4.4.1'
+}
+
+jar {
+    baseName = 'pricescrapper'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile 'org.jsoup:jsoup:1.11.2'
+    testCompile "junit:junit:4.12"
 }
 
